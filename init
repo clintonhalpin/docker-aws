@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo '☠️  Setting up Ansible'
+echo '  -> copy config'
+cp ansible.cfg.sample ansible.cfg
+cp hosts.sample hosts
+cp vars.sample.yml vars.yml
+echo '  -> complete'
