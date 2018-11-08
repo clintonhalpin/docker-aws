@@ -5,11 +5,5 @@
     - ./../vars.yml  
 
   tasks:
-    - name: install packages
-      apt: name={{ item }} update_cache=yes state=latest
-      with_items:
-      - git
-      - vim
-      - fail2ban
-      - python3
-      - nginx
+    - name: foo
+      shell: echo 'bar'
