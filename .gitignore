@@ -1,0 +1,4 @@
+roles/*.retry
+ansible.cfg
+hosts
+vars.yml
