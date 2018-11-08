@@ -1,5 +1,5 @@
 # docker-aws
-Basic Ansible Setup up to spin up docker ready machines
+Basic Ansible Setup up to spin up docker ready machines, or really just ansible stuff
 
 ### get started
 ```
