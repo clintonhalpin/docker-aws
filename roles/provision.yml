@@ -6,6 +6,8 @@
     - ./../vars.yml  
 
   roles:
+    # we need to interact with docker via ansible
+    # https://galaxy.ansible.com/geerlingguy/docker
     - geerlingguy.docker
     - geerlingguy.pip
 
@@ -13,5 +15,5 @@
     - name: booyah
       command: docker -v
       register: dockerVersion
-      
+
     - debug: msg="{{dockerVersion.stdout}}"
