@@ -1,2 +1,4 @@
 # Add galaxy packages here!
 ---
+  - src: geerlingguy.docker
+  - src: geerlingguy.pip

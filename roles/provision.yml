@@ -1,9 +1,17 @@
 ---
 - hosts: "{{ target_group | default('local') }}"
+  become: yes
 
   vars_files:
     - ./../vars.yml  
 
+  roles:
+    - geerlingguy.docker
+    - geerlingguy.pip
+
   tasks:
-    - name: foo
-      shell: echo 'bar'
+    - name: booyah
+      command: docker -v
+      register: dockerVersion
+      
+    - debug: msg="{{dockerVersion.stdout}}"
